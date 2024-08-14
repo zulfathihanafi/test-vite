@@ -10,7 +10,7 @@ function App() {
         return(
           <>
           <p>
-            Hi, aa{data}
+            Hi, {data}
           </p>
           <br />
           </>
