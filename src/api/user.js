@@ -1,9 +1,6 @@
 import supabase from "../supabaseClient"
 
 const register = async (email, password) => {
-
-
-    
     const { data, error } = await supabase.auth.signUp({
         email: email,
         password: password,
