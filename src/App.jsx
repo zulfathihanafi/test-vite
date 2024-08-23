@@ -9,6 +9,8 @@ function App() {
       {arrayData.map((data)=>{
         return(
           <>
+          Hi Zyad and Khairina,
+          <br/>
           <p>
             {data}
           </p>
