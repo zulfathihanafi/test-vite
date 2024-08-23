@@ -6,11 +6,11 @@ function App() {
   const [arrayData, setArrayData] = useState([])
   return (
     <div style={{ minWidth:'100vw',minHeight:'100vh'}}>
+      <b style={{fontSize:'20px'}}>Hi Zyad and Khairina,</b>
+      <br />
       {arrayData.map((data)=>{
         return(
           <>
-          Hi Zyad and Khairina,
-          <br/>
           <p>
             {data}
           </p>
