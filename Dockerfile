@@ -19,9 +19,11 @@ RUN npm run build
 # Install a lightweight web server to serve the built files
 RUN npm install -g serve
 
-RUN echo "ALLOWED_ORIGIN=%env.ALLOWED_ORIGIN%" > .env
+# Define the build argument
+ARG ALLOWED_ORIGIN
 
-RUN echo "$ALLOWED_ORIGIN"
+# Echo the value during the build process to verify
+RUN echo "Building with ALLOWED_ORIGIN=${ALLOWED_ORIGIN}"
 
 # Define the command to run the application
 CMD ["serve", "-s", "dist"]

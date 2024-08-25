@@ -4,7 +4,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        ALLOWED_ORIGIN: ${ALLOWED_ORIGIN}
     ports:
       - "3000:3000"
-    environment:
-      - ALLOWED_ORIGIN=${ALLOWED_ORIGIN}
+    
